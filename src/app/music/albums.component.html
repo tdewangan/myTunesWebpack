@@ -1,0 +1,11 @@
+<ul class="media-list list-group">
+    <li class="media list-group-item" *ngFor="let album of albums" [routerLink]="[ 'Album', { id: album.id }]" appHighlight [hoverColor]="'#cfd8dc'" [activeColor]="'#ffb74d'">
+        <div class="media-left">
+            <a><img class="media-object" [src]="album.getImage(albumImageSize)"></a>
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading">{{album.name}}</h4>
+            <p>{{album.artist}}</p>
+        </div>
+    </li>
+</ul>

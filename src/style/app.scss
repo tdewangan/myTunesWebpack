@@ -1,0 +1,18 @@
+// styles in src/style directory are applied to the whole page
+
+li {
+    cursor: pointer;
+}
+
+.ng-valid:required {
+    border-left: 5px solid #42A948;
+}
+
+.ng-invalid {
+    border-left: 5px solid #A94442;
+}
+
+.media {
+    margin: 0px;
+    border: none;
+}
